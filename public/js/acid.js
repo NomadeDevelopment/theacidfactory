@@ -1,4 +1,6 @@
 $(function(){
+
+	
 	score=-1;
 		var clicker = document.getElementById('clicker');
 		clicker.addEventListener('click', function(){
