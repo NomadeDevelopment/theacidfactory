@@ -10,6 +10,7 @@
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
+	outline: none;
 }
 .contenedor-global{
 	display: flex;
@@ -17,15 +18,25 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 	width: 100%;	
-	height: 600px;
-	border:1px solid green;
+	height: 620px;
+	-border:1px solid green;
+}
+.menu-modal-fastinfo{
+	-display: none;
+	position:absolute;
+	width: 30%;
+	right: 0%;
+	top:-50%;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.7);
+	height: 300px;
 }
 .contenedor-global-juego{	
 	position: relative;
 	flex:2;
 	height: 100%;
-	padding:2% 2%;
-	border:1px solid red;
+	-padding:2% 2%;
+	-border:1px solid red;
 }
 .contenedor-global-data{
 position: relative;
@@ -40,7 +51,7 @@ height: 100%;
 	width: 100%;
 	height: 100%;
 	background-color: #45D680;
-	border:1px solid yellow;
+	-border:1px solid yellow;
 }
 .contenedor-juego header{
 	display: flex;
@@ -50,9 +61,10 @@ height: 100%;
 	justify-content: space-between;
 	width: 100%;
 	height: 70px;
+	z-index: 9999999;
 	background-color: #D34BEF;
 	-background-color: #1f63da;
-	border:1px solid orange;
+	-border:1px solid orange;
 }
 
 .title-app{
@@ -63,31 +75,44 @@ color:#EDE848;
 font-size: 32px;
 }
 .menu-responsive{
-	
+	display: flex;
+	justify-content: center;
 	color:white;
-	width: 10%;
+	width: 50px;
+	height: 50px;
 	max-height: 70px;
-	background-color: #9048F7;
-	padding:2% 4%;
-	margin-right: 5%;
-	
+	background-color: #9048F7;	
+	text-align: center;
+	margin-right: 5%;	
+}
+.menu-responsive:hover{
+	background-color: #830DF1;
+}
+.icono-menu{
+align-self: center;
+}
+.icono-menu:hover{
+	cursor:pointer;
 }
 .contenedor-display{
 	display: flex;
+	position:relative;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	justify-content: flex-start;
+	-justify-content: flex-start;
+	overflow-x: hidden;
 	width: 100%;
 	height: 100%;
-	border:1px solid blue;
+	-border:1px solid blue;
 }
 .contenedor-score{
 	display: flex;
 	width: 100%;
 	height: 50px;
 	justify-content: center;	
+	align-self: flex-start;
 	color:white;
-	border:1px solid blue;
+	-border:1px solid blue;
 }
 .contenedor-score span{
 	align-self: center;
@@ -98,12 +123,13 @@ font-size: 32px;
 .pad-clicker{
 	
 	display: flex;	
-	position: relative;
+	position: absolute;
 	width: 100%;
 	height: 250px;
-	bottom: 0px;
+	bottom: 0;
 	justify-content: center;
-	border:1px solid violet;
+	-align-self: flex-end;
+	-border:1px solid violet;
 }
 .caja-clicker{
 	width: 200px;
@@ -122,6 +148,11 @@ font-size: 32px;
 			border-radius: 100%;
 			border:none;
 			-border:1px solid blue;
+			transition: all .2s ease;
+}
+.caja-clicker #clicker:hover{
+	cursor:pointer;
+	background-color: #E0EC1E;
 }
 .contenedor-pad-acciones{		
 	position: absolute;
@@ -129,7 +160,7 @@ font-size: 32px;
 	display: flex;
 	height: 100%;
 	-padding:2% 3%;
-	right: 5%;
+	right: 10%;
 	-justify-content: center;
 	-border:1px solid red;
 }
@@ -146,23 +177,24 @@ ul li {
 button#next_1{
 	width: 60px;
 	height: 60px;
-	margin-left: 20%;
-	margin-top: 15%;	
+	margin-left: 0%;
+	-margin-top: 15%;
+
 }
-button#next_2{}
-button#next_3{margin-left: 60%;}
+button#next_2{-margin-left: 25%;}
+button#next_3{-margin-left: 25%;}
 button#next_4{}
 button#next_5{
 	background-color: #00F72E;
-	margin-left: 20%;
+	margin-left: 8%;
 }
  button.acciones{
- display: block;
- float:left;	
+	 display: block;
+	 float:left;	
 	width: 30px;
 	height: 30px;	
 	border-radius: 100%;
-	margin-left: 50%;
+	margin-left: 25%;
 	border:none;
 	background-color: #EF4343;
 }
@@ -179,6 +211,16 @@ button#next_5{
 	justify-content: space-around;
 	width: 100%;	
 	border:1px solid green;
+}
+ button.acciones{
+	 display: block;
+	 float:left;	
+	width: 30px;
+	height: 30px;	
+	border-radius: 100%;
+	margin-left: 50%;
+	border:none;
+	background-color: #EF4343;
 }
 
 .menu-responsive{	
@@ -233,6 +275,7 @@ button#next_5{
 			-border:1px solid blue;
 }
 
+
 	button#next_1{
 	width: 50px;
 	height: 50px;
@@ -244,5 +287,15 @@ margin-left:57%;
 }
 button#next_5{
 	margin-top: -5%;
+	margin-left: 25%;
+}
+.menu-modal-fastinfo{
+	-display: none;
+	position:absolute;
+	width: 100%;	
+	top:-50%;	
+	z-index: 1;
+	background-color: rgba(0,0,0,0.7);
+	height: 200px;
 }
 }

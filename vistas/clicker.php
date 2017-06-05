@@ -18,11 +18,12 @@
 			<div class="contenedor-juego">	
 				<header>	
 					<span class="title-app">TheAcidFactory</span>
-					<div class="menu-responsive">&#9776</div>
+					<div class="menu-responsive"><span class="icono-menu">&#9776</span></div>
 				</header>	
+				<div class="menu-modal-fastinfo"></div>
 				<div class="contenedor-display">	
 					<div class="contenedor-score">
-						<span class="data-lsd">5454215 LSD/S</span>
+						<span class="data-lsd">0 LSD/S</span>
 					</div>				
 					<div class="pad-clicker">
 						<div class="caja-clicker"><button id="clicker" >First CLICK!</button></div>							
@@ -40,7 +41,7 @@
 							
 			</div>
 		</div>
-		<div class="contenedor-global-data"></div>
+		
 
 	</div>
 	
