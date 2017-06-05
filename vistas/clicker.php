@@ -15,19 +15,32 @@
 
 	<div class="contenedor-global">
 		<div class="contenedor-global-juego">
-			<div class="contenedor-juego">
-				<div>
-					<button id="clicker" value="Click me"></button>
-	<div>
-		<input type="text" name="t1" id="t1" size="25">
-	</div>
-					
+			<div class="contenedor-juego">	
+				<header>	
+					<span class="title-app">TheAcidFactory</span>
+					<div class="menu-responsive">&#9776</div>
+				</header>	
+				<div class="contenedor-display">	
+					<div class="contenedor-score">
+						<span class="data-lsd">5454215 LSD/S</span>
+					</div>				
+					<div class="pad-clicker">
+						<div class="caja-clicker"><button id="clicker" >First CLICK!</button></div>							
+							<div class="contenedor-pad-acciones">
+									<ul>									
+										<li><button id="next_1" class="acciones"></button></li>
+										<li><button id="next_2" class="acciones"></button></li>
+										<li><button id="next_3" class="acciones"></button></li>
+										<li><button id="next_4" class="acciones"></button></li>
+										<li><button id="next_5" class="acciones"></button></li>
+									</ul>
+							</div>		
+					</div>																
 				</div>
+							
 			</div>
 		</div>
-		<div class="contenedor-global-data">
-			
-		</div>
+		<div class="contenedor-global-data"></div>
 
 	</div>
 	
