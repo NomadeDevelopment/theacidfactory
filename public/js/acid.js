@@ -16,6 +16,16 @@ $(function(){
 			}
 			
 		});
+		var lsd = 0;
+		function suma(){
+			lsd++;
+			$('.data-lsd').text(lsd+' LSD/S');
+		}
+		setInterval(suma,300);
+
+		$('#clicker').click(function(e){
+			suma();
+		})
 
 		
 })
